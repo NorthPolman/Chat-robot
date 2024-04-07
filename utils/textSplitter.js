@@ -5,7 +5,7 @@ import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
 
 // @supabase/supabase-js
 try {
-    const result = await fetch('elvis-info.txt')
+    const result = await fetch('scrimba-info.txt')
     const text = await result.text()
     const splitter = new RecursiveCharacterTextSplitter({
         chunkSize: 500,
